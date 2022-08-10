@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("answer", answer);
                 startActivity(intent);
             } catch (NumberFormatException e) {
-
                 e.printStackTrace();
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("error", e.getMessage());

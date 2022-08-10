@@ -14,12 +14,13 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        // 정상 처리
         String answer = getIntent().getStringExtra("answer");
         TextView answerMsg = findViewById(R.id.answer);
         answerMsg.setText(answer);
-
+        // 에러 났을 때 처리
         String error = getIntent().getStringExtra("error");
-        Log.d(SecondActivity.class.getSimpleName(), "onCreate: "+error);
+//        Log.d(SecondActivity.class.getSimpleName(), "onCreate: "+error);
         TextView errorMsg = findViewById(R.id.errorMsg);
         errorMsg.getText();
         errorMsg.setText(error);
