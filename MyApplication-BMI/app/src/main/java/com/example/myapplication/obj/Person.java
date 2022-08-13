@@ -11,4 +11,8 @@ public class Person {
         System.out.println("BMI:" + result);
         return result;
     }
+
+    // 패키지가 다른 클래스 안에서 상속받지 않는 이상 person. 찍었을 때 안나옴
+    // ex. MainActivity에서 안나옴
+    private String etc;
 }

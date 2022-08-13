@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
+import com.example.myapplication.obj.Answer;
+
 import org.w3c.dom.Text;
 
 public class SecondActivity extends AppCompatActivity {
@@ -14,6 +16,7 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
         // 정상 처리
         String answer = getIntent().getStringExtra("answer");
         TextView answerMsg = findViewById(R.id.answer);
